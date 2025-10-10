@@ -10,49 +10,70 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
+import com.example.bitefood.data.AppDatabase
+import com.example.bitefood.model.User
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class LoginPageActivity : AppCompatActivity() {
-    lateinit var username:EditText
-    lateinit var password:EditText
-     lateinit var LogIn:Button
-     lateinit var regesterlink:TextView
+
+    lateinit var username: EditText
+    lateinit var password: EditText
+    lateinit var LogIn: Button
+    lateinit var regesterlink: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login_page)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-         username=findViewById(R.id.namefield)
-        password=findViewById(R.id.passwordfield)
-        LogIn=findViewById(R.id.btn1)
-        regesterlink=findViewById(R.id.Reglink)
+
+        username = findViewById(R.id.namefield)
+        password = findViewById(R.id.passwordfield)
+        LogIn = findViewById(R.id.btn1)
+        regesterlink = findViewById(R.id.Reglink)
+
+        val db = AppDatabase.getDatabase(this)
+        val userDao = db.userDao()
+
         LogIn.setOnClickListener {
-            if(username.text.toString().isEmpty()|| password.text.toString().isEmpty())
-            {
+            val usernameText = username.text.toString().trim()
+            val passwordText = password.text.toString().trim()
+
+            if (usernameText.isEmpty() || passwordText.isEmpty()) {
                 Toast.makeText(this, "Fill The UserName And Password First", Toast.LENGTH_SHORT).show()
+            } else {
+                // ✅ Call Room suspend function in coroutine
+                lifecycleScope.launch(Dispatchers.IO) {
+                    try {
+                        val user: User? = userDao.login(usernameText, passwordText)
+                        withContext(Dispatchers.Main) {
+                            if (user != null) {
+                                Toast.makeText(this@LoginPageActivity, "Login Successful", Toast.LENGTH_SHORT).show()
+                                startActivity(Intent(this@LoginPageActivity, HomepageActivity::class.java))
+                                finish()
+                            } else {
+                                Toast.makeText(this@LoginPageActivity, "Invalid Username Or Password", Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    } catch (e: Exception) {
+                        withContext(Dispatchers.Main) {
+                            Toast.makeText(this@LoginPageActivity, "Login failed: ${e.message}", Toast.LENGTH_LONG).show()
+                        }
+                    }
+                }
             }
-
-
-            if(username.text.toString()=="samia12" && password.text.toString()=="123@")
-            {
-                startActivity(Intent(this,HomepageActivity::class.java))
-            }
-            else{
-                Toast.makeText(this, "Invalid Username Or Password", Toast.LENGTH_SHORT).show()
-            }
-
         }
+
         regesterlink.setOnClickListener {
-            startActivity(Intent(this,RegistrationActivity::class.java))
+            startActivity(Intent(this, RegistrationActivity::class.java))
         }
-
-
-
-
     }
 }
