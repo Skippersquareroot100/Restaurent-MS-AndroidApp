@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+   android:background="@drawable/foodtwo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/signview"
+        android:layout_width="178dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="52dp"
+        android:text="SIGN UP"
+        android:textColor="#FF8113"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="310dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signview" />
+
+    <EditText
+        android:id="@+id/usernametext"
+        android:layout_width="310dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+    <EditText
+        android:id="@+id/passtext"
+        android:layout_width="310dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernametext" />
+
+    <EditText
+        android:id="@+id/confirmpasstext"
+        android:layout_width="310dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passtext" />
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="222dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FF5E13"
+        android:text="Create An Account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpasstext" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbtn">
+
+        <TextView
+            android:id="@+id/signerrortext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/alreadytext"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="Already Have An Account?"
+            android:textColor="#5E3023"
+            android:textSize="15sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

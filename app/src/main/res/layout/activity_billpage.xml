@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#FFF0C7"
+    tools:context=".BillpageActivity">
+
+
+    <TextView
+        android:id="@+id/hflogo2"
+        android:layout_width="206dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:text="YUMCRAFT"
+        android:textColor="#FF8113"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoview3"
+        android:layout_width="56dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yumcraft" />
+
+    <TextView
+        android:id="@+id/foodtitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Food Name:"
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoview3" />
+
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/foodtitle"
+        app:layout_constraintTop_toBottomOf="@+id/hflogo2" />
+
+    <TextView
+        android:id="@+id/pricetitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="72dp"
+        android:text="Food Price:"
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodtitle" />
+
+    <TextView
+        android:id="@+id/foodprice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:text=""
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pricetitle"
+        app:layout_constraintTop_toBottomOf="@+id/foodname" />
+
+    <TextView
+        android:id="@+id/quantitytitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="98dp"
+        android:text="Quantity:"
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricetitle" />
+
+    <TextView
+        android:id="@+id/foodquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="96dp"
+        android:text="1"
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/quantitytitle"
+        app:layout_constraintTop_toBottomOf="@+id/foodprice" />
+
+    <Button
+        android:id="@+id/minusbtn"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF8113"
+        android:text="-"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodquantity" />
+
+    <Button
+        android:id="@+id/plusbtn"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#FF8113"
+        android:text="+"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/minusbtn"
+        app:layout_constraintTop_toBottomOf="@+id/hflogo2" />
+
+    <Button
+        android:id="@+id/totalbill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#FF8113"
+        android:text=" Confirm Order"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalamount" />
+
+    <TextView
+        android:id="@+id/totalamounttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="92dp"
+        android:text="Total Amount:"
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantitytitle" />
+
+    <TextView
+        android:id="@+id/totalamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="#F42B03"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totalamounttitle"
+        app:layout_constraintTop_toBottomOf="@+id/minusbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

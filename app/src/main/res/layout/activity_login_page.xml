@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPageActivity">
+
+
+    <ImageView
+        android:id="@+id/logoview"
+        android:layout_width="192dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yumcraft" />
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#FF8113"
+        android:text="Y U M C R A F T"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoview" />
+
+    <EditText
+        android:id="@+id/namefield"
+        android:layout_width="344dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotext" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF5E13"
+        android:text="Log In"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordfield" />
+
+    <EditText
+        android:id="@+id/passwordfield"
+        android:layout_width="340dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namefield" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1">
+
+        <TextView
+            android:id="@+id/errormsgview"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/forgetpassview"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="#5E3023"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="Forget Password" />
+
+        <TextView
+            android:id="@+id/Reglink"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textSize="15sp"
+            android:textColor="#5E3023"
+            android:gravity="center"
+            android:text="Don't Have Any Account? Register Now" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFF0C7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageActivity">
+
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="500dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/chikentitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Fried Chiken"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chikenview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/chikenfry"
+            android:text="" />
+
+        <Button
+            android:id="@+id/chikenbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FF5E13"
+            android:text="Order" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="500dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/coffeetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/coffeeview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/cofffee"
+            android:text="" />
+
+        <Button
+            android:id="@+id/coffeebutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FF5E13"
+            android:text="Order" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/foodbentotitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Food Bento"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foodbentoview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/foodbento"
+            android:text="" />
+
+        <Button
+            android:id="@+id/foodbentobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FF5E13"
+            android:text="Order" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/burgertitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burger"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/burgerview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/burger"
+            android:text="" />
+
+        <Button
+            android:id="@+id/burgerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FF5E13"
+            android:text="Order" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pizzatitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pizzaview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/pizza"
+            android:text="" />
+
+        <Button
+            android:id="@+id/pizzabutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#FF5E13"
+            android:text="Order" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hflogo"
+        android:layout_width="206dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:text="YUMCRAFT"
+        android:textColor="#FF8113"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoview2"
+        android:layout_width="56dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/yumcraft" />
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/souptitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Soup"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/soupview"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/soup"
+                        android:text="" />
+
+                    <Button
+                        android:id="@+id/soupbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#FF5E13"
+                        android:text="Order" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
