@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF3E0"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Generic Style for Each Food Section -->
+        <!-- Soup -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soup"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etSoupPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/etSoupQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/btnSoupAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:text="Update Soup"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6F00"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Burger -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etBurgerPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/etBurgerQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/btnBurgerAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Update Burger"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Pizza -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etPizzaPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/etPizzaQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/btnPizzaAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FF6F00"
+            android:text="Update Pizza"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Bento -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bento"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etBentoPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/etBentoQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/btnBentoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:text="Update Bento"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6F00"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cappuccino -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etCappuccinoPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/etCappuccinoQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/btnCappuccinoAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:text="Update Cappuccino"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6F00"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Fried Chicken -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fried Chicken"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etFriedChickenPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:textColor="#212121" />
+
+        <EditText
+            android:id="@+id/etFriedChickenQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:backgroundTint="#FFCC80"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/btnFriedChickenAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:text="Update Fried Chicken"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6F00"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

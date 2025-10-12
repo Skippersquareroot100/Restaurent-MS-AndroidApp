@@ -14,7 +14,7 @@ object DatabaseProvider {
             val instance = Room.databaseBuilder(
                 context.applicationContext,
                 AppDatabase::class.java,
-                "user_database"
+                "bitefood_db"
             ).build()
             INSTANCE = instance
             instance
